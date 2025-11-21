@@ -90,10 +90,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 192, 203, 0.9); /* warna pink transparan */
+  background-color: rgba(255, 192, 203, 0.85); /* pink transparan */
   color: #fff;
   z-index: 1000;
-  padding: 15px 50px;
+
+  /* PERBAIKAN UTAMA */
+  padding: 12px 30px; /* sebelumnya 15px 50px — terlalu tinggi */
+  backdrop-filter: blur(10px);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,11 +229,13 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/bg.jpg');
+  justify-content: center;
+  background-image: url('../img/sk 1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
@@ -243,9 +249,9 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url('../img/sk\ 1.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
