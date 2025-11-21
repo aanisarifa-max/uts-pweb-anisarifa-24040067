@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caca Skincare</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar Start -->
+<nav class="navbar">
+  <a href="#" class="navbar-logo">Skintific<span>Skincare</span></a>
+  <div class="navbar-nav">
+    <a href="#home">Home</a>
+    <a href="#about">Tentang Kami</a>
+    <a href="#menu">Menu</a>
+    <a href="#products">Produk</a>
+    <a href="#contact">Kontak</a>
+  </div>
+  <div class="navbar-extra">
+    <a href="#" id="search-button"><i data-feather="search"></i></a>
+    <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+  <!-- Search Form -->
+  <div class="search-form">
+    <input type="search" id="search-box" placeholder="search here" />
+    <label for="search-box"><i data-feather="search"></i></label>
+  </div>
+
+  <!-- Shopping Cart -->
+<div class="shopping-cart">
+  <h2>Keranjang Belanja</h2>
+  <div class="cart-items">
+    <!-- Produk yang ditambahkan akan muncul di sini -->
+  </div>
+  <div class="cart-total">
+    <h3>Total: <span id="cart-total">IDR 0K</span></h3>
+    <button id="checkout-button">Checkout</button>
+  </div>
+</div>
+<!-- Shopping Cart End -->
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="mask-container">
+      <main class="content">
+        <h1>Glow Maksimal Harga Hemat!!<span>Diskon</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, voluptatem.</p>
+        <a href="#" class="cta">Beli</a>
+      </main>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
+    <div class="row">
+      <div class="about-img">
+        <img src="img/hd.jfif" alt="Tentang Kami" />
+      </div>
+      <div class="content">
+        <h3>Kenapa Harus Skintific?</h3>
+        <p>Skintific adalah merek perawatan kulit yang berfokus pada produk berbasis ilmiah yang menggunakan bahan aktif untuk mengatasi masalah kulit seperti jerawat, kulit kering, dan kerusakan skin barrier. Meskipun sempat diklaim berasal dari Kanada, kini Skintific dikonfirmasi sebagai merek dari Tiongkok dan diproduksi di pabrik China di bawah lisensi perusahaan PT May Sun Yvan di Indonesia. Produknya banyak ditemukan di pasar Indonesia sejak 2021 melalui 
+          strategi pemasaran yang efektif di media sosial dan e-commerce.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Menu Section -->
+<section id="menu" class="menu">
+  <h2><span>Produk</span> Kami</h2>
+  <p>Temukan rangkaian skincare terbaik untuk kulit sehat, cerah, dan glowing alami.</p>
+
+  <div class="menu-container">
+    <div class="menu-card">
+      <img src="img/fasial.png" alt="Facial Wash" />
+      <h3>- Facial Wash -</h3>
+      <p>IDR 115K</p>
+    </div>
+
+    <div class="menu-card">
+      <img src="img/mois.jpg" alt="Moisturizer" />
+      <h3>- Moisturizer -</h3>
+      <p>IDR 150K</p>
+    </div>
+
+    <div class="menu-card">
+      <img src="img/masker.jpeg" alt="Masker Brightening" />
+      <h3>- Masker Brightening -</h3>
+      <p>IDR 80K</p>
+    </div>
+
+    <div class="menu-card">
+      <img src="img/cleaning.jpg" alt="Cleanser" />
+      <h3>- Cleanser -</h3>
+      <p>IDR 90K</p>
+    </div>
+
+    <div class="menu-card">
+      <img src="img/serum.jpg" alt="Serum" />
+      <h3>- Serum -</h3>
+      <p>IDR 115K</p>
+    </div>
+  </div>
+</section>
+
+<!-- Products Section start -->
+<section class="products" id="products">
+  <h2><span>Produk Unggulan</span> Kami</h2>
+  <p>Temukan produk kecantikan terbaik brand-brand global terkemuka. Dapatkan diskon setiap berbelanja.</p>
+
+  <div class="row">
+    <!-- Produk 1 -->
+    <div class="product-card">
+  <div class="product-icons">
+    <a href="#" class="add-to-cart"><i data-feather="shopping-cart"></i></a>
+    <a href="#" onclick="showDetail(1)"><i data-feather="eye"></i></a>
+  </div>
+      <div class="product-image">
+        <img src="img/glowing set.jpg" alt="Glowing Set">
+      </div>
+      <div class="product-content">
+        <h3>Glowing Set</h3>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 300K <span>IDR 350K</span></div>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="product-card">
+  <div class="product-icons">
+    <a href="#" class="add-to-cart"><i data-feather="shopping-cart"></i></a>
+    <a href="#" onclick="showDetail(2)"><i data-feather="eye"></i></a>
+  </div>
+      <div class="product-image">
+        <img src="img/dark spot.jpg" alt="Dark Spot">
+      </div>
+      <div class="product-content">
+        <h3>Dark Spot</h3>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 350K <span>IDR 380K</span></div>
+      </div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="product-card">
+  <div class="product-icons">
+    <a href="#" class="add-to-cart"><i data-feather="shopping-cart"></i></a>
+  <a href="#" onclick="showDetail(3)"><i data-feather="eye"></i></a>
+  </div>
+      <div class="product-image">
+        <img src="img/lip serum.jpg" alt="Lip serum">
+      </div>
+      <div class="product-content">
+        <h3>Lip Serum</h3>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 120K <span>IDR 150K</span></div>
+      </div>
+    </div>
+
+    <!-- Produk 4 -->
+    <div class="product-card">
+  <div class="product-icons">
+    <a href="#" class="add-to-cart"><i data-feather="shopping-cart"></i></a>
+    <a href="#" onclick="showDetail(4)"><i data-feather="eye"></i></a>
+  </div>
+      <div class="product-image">
+        <img src="img/serum 2.jfif" alt="Product 4">
+      </div>
+      <div class="product-content">
+        <h3>Serum Skinbarrier</h3>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 90K <span>IDR 100K</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Products Section end -->
+
+  <!-- Modal Detail Produk -->
+<div id="productDetailModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div class="modal-left">
+      <img id="detailImage" src="" alt="Detail Produk">
+    </div>
+    <div class="modal-right">
+      <h3 id="detailName"></h3>
+      <p id="detailPrice"></p>
+      <p id="detailDescription"></p>
+      <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Contact Section Start -->
+<section class="contact" id="contact">
+  <h2><span>Hubungi</span> Kami</h2>
+  <p>Isi form di bawah untuk menghubungi kami secara langsung.</p>
+
+  <div class="contact-container">
+    <form class="contact-form">
+      <div class="input-group">
+        <i data-feather="user"></i>
+        <input type="text" placeholder="Nama" required />
+      </div>
+
+      <div class="input-group">
+        <i data-feather="mail"></i>
+        <input type="email" placeholder="Email" required />
+      </div>
+
+      <div class="input-group">
+        <i data-feather="phone"></i>
+        <input type="tel" placeholder="No HP" required />
+      </div>
+
+      <button type="submit" class="btn">Kirim Pesan</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Contact Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="">pemrograman web </a>. | &copy; 2025.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+
+<!-- Feather Icons -->
+<script src="https://unpkg.com/feather-icons">
+</script>
+
+<script>
+  // ===============================
+  // FUNGSI KERANJANG BELANJA
+  // ===============================
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  const modalAddButton = document.querySelector('.add-to-cart-modal');
+  const cartContainer = document.querySelector('.cart-items');
+  const cartTotal = document.getElementById('cart-total');
+  const checkoutButton = document.getElementById('checkout-button');
+  const shoppingCart = document.querySelector('.shopping-cart');
+  let cart = [];
+
+  // Tambahkan produk ke keranjang
+  addToCartButtons.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault(); // 🔥 penting: cegah scroll ke home
+
+      const product = btn.closest('.product-card');
+      const name = product.querySelector('h3').innerText;
+      const priceText = product.querySelector('.product-price').innerText;
+      const price = parseInt(priceText.replace(/\D/g, '')) / 1000;
+      const image = product.querySelector('img').src;
+
+      const existing = cart.find((item) => item.name === name);
+      if (existing) existing.qty++;
+      else cart.push({ name, price, image, qty: 1 });
+
+      updateCart();
+      shoppingCart.classList.add('active'); // 🔥 otomatis buka keranjang kanan
+    });
+  });
+
+  // Tambahkan produk dari modal
+  if (modalAddButton) {
+    modalAddButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      const modal = document.getElementById('item-detail-modal');
+      const name = modal.querySelector('h3').innerText;
+      const priceText = modal.querySelector('.product-price').innerText;
+      const price = parseInt(priceText.replace(/\D/g, '')) / 1000;
+      const image = modal.querySelector('img').src;
+
+      const existing = cart.find((item) => item.name === name);
+      if (existing) existing.qty++;
+      else cart.push({ name, price, image, qty: 1 });
+
+      updateCart();
+      modal.style.display = 'none';
+      shoppingCart.classList.add('active');
+    });
+  }
+
+  // Update isi keranjang
+  function updateCart() {
+    cartContainer.innerHTML = '';
+    let total = 0;
+
+    cart.forEach((item, index) => {
+      total += item.price * item.qty;
+
+      const div = document.createElement('div');
+      div.classList.add('cart-item');
+      div.innerHTML = `
+        <img src="${item.image}" alt="${item.name}" />
+        <div>
+          <h4>${item.name}</h4>
+          <p>IDR ${item.price}K x ${item.qty}</p>
+        </div>
+        <button class="delete-btn" data-index="${index}">
+          <i data-feather="trash-2"></i>
+        </button>
+      `;
+      cartContainer.appendChild(div);
+    });
+
+    cartTotal.innerText = `IDR ${total}K`;
+    feather.replace();
+
+    // hapus item dari keranjang
+    document.querySelectorAll('.delete-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const idx = btn.dataset.index;
+        cart.splice(idx, 1);
+        updateCart();
+      });
+    });
+  }
+
+  // Tombol checkout
+  checkoutButton.addEventListener('click', () => {
+    if (cart.length === 0) {
+      alert('Keranjang masih kosong!');
+    } else {
+      alert('Checkout berhasil! Terima kasih sudah berbelanja 💖');
+      cart = [];
+      updateCart();
+    }
+  });
+</script>
+
+<!-- Modal Detail Produk -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modalImg" src="" alt="Product Image">
+    <h3 id="modalTitle"></h3>
+    <p id="modalPrice"></p>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+<!-- ==================== MODAL PRODUK ==================== -->
+<div id="productModal" class="modal">
+  <div class="modal-box">
+    <span class="close-btn">&times;</span>
+    <div class="modal-left">
+      <img id="modalImg" src="" alt="Product Image">
+    </div>
+    <div class="modal-right">
+      <h3 id="modalTitle"></h3>
+      <p id="modalPrice"></p>
+      <p id="modalDesc"></p>
+      <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SCRIPT MODAL ==================== -->
+<script>
+  // DATA PRODUK
+  const products = [
+    {
+      name: "Glowing Set",
+      price: "IDR 300K",
+      desc: "Rangkaian perawatan untuk membuat kulit tampak cerah, lembab, dan sehat bercahaya.",
+      img: "img/glowing set.jpg"
+    },
+    {
+      name: "Dark Spot",
+      price: "IDR 350K",
+      desc: "Membantu memudarkan flek hitam dan meratakan warna kulit dengan formula aktif.",
+      img: "img/dark spot.jpg"
+    },
+    {
+      name: "Lip Serum",
+      price: "IDR 120K",
+      desc: "Melembapkan bibir dan memberikan tampilan lebih cerah alami.",
+      img: "img/lip serum.jpg"
+    },
+    {
+      name: "Serum Skinbarrier",
+      price: "IDR 90K",
+      desc: "Menjaga kelembapan kulit dan memperkuat skin barrier agar tetap sehat.",
+      img: "img/serum 2.jfif"
+    }
+  ];
+
+  // Ambil elemen
+  const modal = document.getElementById("productModal");
+  const modalImg = document.getElementById("modalImg");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalPrice = document.getElementById("modalPrice");
+  const modalDesc = document.getElementById("modalDesc");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Fungsi tampilkan modal
+  function showDetail(index) {
+    const p = products[index];
+    modalImg.src = p.img;
+    modalTitle.textContent = p.name;
+    modalPrice.textContent = p.price;
+    modalDesc.textContent = p.desc;
+
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  // Tutup modal (tombol X)
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  };
+
+  // Tutup modal klik luar area
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  };
+
+  // Cegah link ke #home saat klik tombol detail
+  document.querySelectorAll('.item-detail-button').forEach(btn => {
+    btn.addEventListener('click', e => e.preventDefault());
+  });
+</script>
+
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
